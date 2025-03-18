@@ -12,8 +12,6 @@ export async function createPost(content:string, imageUrl:string) {
                 content: content,
                 image: imageUrl,
                 authorId: userId,
-                
-            
             }
         })
         revalidatePath("/"); // clear homepage cache
